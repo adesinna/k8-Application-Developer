@@ -3,7 +3,7 @@ some that needs to be ephemeral.
 
 While replicaset ensure a given set of pods are running, jobs make sure this ephemeral pods do their jobs and disappear.
 
-Cron job is for periodic jo
+Cron job is for periodic jobs
 
 kubectl get jobs
 
