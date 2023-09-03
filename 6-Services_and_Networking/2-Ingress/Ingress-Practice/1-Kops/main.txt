@@ -68,7 +68,7 @@ We use kops to set up our cluster on aws
     --node-volume-size=8 \
     --master-volume-size=8
 
-    kops update cluster --name=kops-k8-cluster --state=s3://kops-shanana-state --yes --admin
+    kops update cluster --name=shananadevops.xyz --state=s3://kops-shanana-state --yes --admin
 
     wait for 10mins
 
@@ -76,4 +76,5 @@ We use kops to set up our cluster on aws
 
 13. You can delete the cluster
 
-    kops delete cluster --name=kops-k8-cluster --state=s3://kops-shanana-state --yes
+    kops delete cluster --name=shananadevops.xyz --state=s3://kops-shanana-state --yes
+
