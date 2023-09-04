@@ -27,7 +27,23 @@ Persistent Volume Claim:
 
     PV and PVC should always be one to one mapping.
 
+ReadWriteOnce (RWO):
 
+    This mode allows the volume to be mounted as read-write by a single node (Pod) at a time.
+    It's suitable for scenarios where a volume should be mounted as read-write by only one Pod, providing exclusive access to that Pod.
+    Common use cases include running a single-instance database like MySQL or PostgreSQL.
+
+ReadOnlyMany (ROX):
+
+    This mode allows the volume to be mounted as read-only by multiple nodes (Pods) simultaneously.
+    It's suitable for scenarios where multiple Pods need to read from the same data source, but no Pod is expected to modify the data.
+    Common use cases include sharing configuration files or static assets among multiple Pods.
+
+ReadWriteMany (RWX):
+
+    This mode allows the volume to be mounted as read-write by multiple nodes (Pods) simultaneously.
+    It's suitable for scenarios where multiple Pods need both read and write access to the same data source simultaneously.
+    Common use cases include shared storage solutions like NFS, where multiple Pods need to read and write to a common file system.
 
 
 
