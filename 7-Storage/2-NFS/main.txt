@@ -1,0 +1,7 @@
+Stateless and Stateful Apps:
+
+    Stateless Applications are apps that do not need any data for it to start working, while
+    stateful apps needs data for the container to start.
+
+
+NFS is a shared storage that is independent of the nodes.
