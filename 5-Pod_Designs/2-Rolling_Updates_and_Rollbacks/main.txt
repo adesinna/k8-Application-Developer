@@ -24,8 +24,8 @@ Deployment Strategy:
 Edit your deployment
 kubectl edit deployment frontend # if you cant find the deployment
 
-kubectl apply -f deployment.yaml
+kubectl apply -f deployment.yaml # add the specific image you want
 
-kubectl rollout undo deployment/deployment_name # to undo a change, this brings the older one up
+kubectl rollout undo deployment/deployment_name # this will revert to the specific deployment
 
 
