@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 3  # makes sure that 3 replicas are always running
   selector:
     matchLabels:
       app: nginx

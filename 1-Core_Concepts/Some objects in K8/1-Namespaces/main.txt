@@ -10,9 +10,9 @@ Namespaces:
 
         specify namespace
 
-        kubectl create -f definition_file.yaml
+        kubectl create -f definition_file.yaml -n shinakube
 
-        kubectl apply -f df.yaml # if changes were made to the file
+        kubectl apply -f df.yaml  -n shinakube # if changes were made to the file
 
         kubectl get pods -n shinakube # get all pods in namespace shinakube
 

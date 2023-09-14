@@ -14,9 +14,9 @@ kubectl describe pod name_of_pod
 
 kubectl get nodes # gets the nodes
 
-kubectl describe node name_of_node
+kubectl describe node name_of_node # this has to do with nodes
 
-kubectl get pods -o wide
+kubectl get pods -o wide # gives more details than just get pods, this will show the nodes where the pods are running
 
 
 Debugging Pods:
