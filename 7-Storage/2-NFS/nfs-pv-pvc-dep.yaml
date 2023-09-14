@@ -6,9 +6,9 @@ spec:
   storageClassName: nfs-manual
   capacity:
     storage: 1Gi
-  volumeMode: Filesystem #Block
+  volumeMode: Filesystem #It cloud be blocked or object too, but here it is Filesystem
   accessModes:
-    - ReadWriteMany
+    - ReadWriteMany # many nodes can read and write to it
   persistentVolumeReclaimPolicy: Retain
   nfs:
     path: /var/nfs
@@ -22,7 +22,7 @@ metadata:
 spec:
   storageClassName: nfs-manual
   accessModes:
-  - ReadWriteMany
+  - ReadWriteMany # must be the same with pv
   resources:
      requests:
        storage: 1Gi
