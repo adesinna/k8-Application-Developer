@@ -3,9 +3,7 @@ This is a pod to node relationship, the ones it should accept or the one it shou
 Taints are set on nodes while toleration are set on pods, if a taint  is tolerant of pod, it allows it to be created there.
 
 
-
-
-Sure! Imagine you have a big playground (your Kubernetes cluster) with several play areas (nodes) for different
+Imagine you have a big playground (your Kubernetes cluster) with several play areas (nodes) for different
 activities (running containers). Now, let's talk about "taints" and how they work:
 
 Taints are like special signs that you put on a specific play area (node) to say, "Hey, only certain kids (pods)

@@ -25,4 +25,4 @@ spec:
             nodeSelectorTerms:
               - matchExpressions:
                   - key: node-role.kubernetes.io/control-plane
-                    operator: Exists
+                    operator: Exists  # deploy these pods on the control plane!
